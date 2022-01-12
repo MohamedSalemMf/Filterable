@@ -1,0 +1,104 @@
+body {
+  background: #b79525;
+}
+
+
+.cont{
+    width: 80%;
+    margin: 5rem auto;
+}
+
+/* ======================================================================================================================= */
+
+.box-GALLERY h1{
+  text-align: center;
+  font-size: 35px;
+  margin: 40px 0 ;
+  position: relative;
+}
+
+
+
+.box-GALLERY h1::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: black;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: anims 4s   linear  infinite ;
+}
+
+
+@keyframes anims {
+  0%{
+    width: 100px;
+  }
+  25%{
+    width: 200px;
+  }
+  50%{
+    width: 300px;
+  }
+  75%{
+    width: 200px;
+  }
+  100%{
+    width: 100px;
+  }
+}
+
+
+/* ================================================================================================= */
+/* Filterable  */
+
+#portfolio {
+  width: 100%;
+  max-width: 600px;
+  margin: 2em auto;
+}
+
+#portfolio-sort {
+  text-align: center;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #999;
+  margin-bottom: 1em;
+}
+
+#portfolio-sort a {
+  color: #fff;
+  background: #a00;
+  display: inline-block;
+  padding: 3px 9px;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+#portfolio-content {
+  overflow: hidden;
+}
+
+div.portfolio-item {
+  float: left;
+  margin: 0 3% 1em 0;
+  width: 29%;
+  height: 10em;
+  line-height: 10;
+  text-align: center;
+}
+
+div[data-cat="a"] {
+  background: #ccc;
+}
+
+div[data-cat="b"] {
+  background: #666;
+  color: #fff;
+}
+
+div[data-cat="c"] {
+  background: #333;
+  color: #fff;
+}
